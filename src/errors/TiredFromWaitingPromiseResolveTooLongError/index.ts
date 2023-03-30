@@ -1,4 +1,4 @@
-import { MS_IN_SEC } from "variables"
+import { MS_IN_SEC } from "../../variables"
 
 class TiredFromWaitingPromiseResolveTooLongError extends Error {
     constructor(timeout: number) {

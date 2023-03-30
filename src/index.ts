@@ -1,5 +1,5 @@
-import TimeoutError from "errors/TiredFromWaitingPromiseResolveTooLongError"
-import { PromiseExecutor } from "types"
+import TimeoutError from "./errors/TiredFromWaitingPromiseResolveTooLongError"
+import { PromiseExecutor } from "./types"
 
 function newPromiseUntilTired<T>(executor: PromiseExecutor<T>, timeout: number) {
     let isResolved = false
